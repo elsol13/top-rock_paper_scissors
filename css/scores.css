@@ -1,0 +1,95 @@
+.circle {
+    clip-path: circle(1.75em at 50% 50%); /* Radius of 3em and centered at 50% horizontally and 50% vertically */
+    background-color: white; /* Just for visualization */
+    width:3.5em;
+    height: 3.5em;
+}
+
+.rounds {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.score-text {
+    text-align: center;
+    padding: 0;
+}
+
+.score-desc {
+    font-size: .9em;
+    margin-top: 0;
+    padding-bottom: 20px;
+    display: none;
+}
+
+.round-score {
+    font-size: .9em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers both horizontally and vertically */
+    margin: 0; /* Remove the margin or adjust as needed */
+}
+
+.round-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 20%;
+    position: relative;
+}
+
+.round-text {
+    font-size: 2em;
+}
+
+
+.round-won {
+    background-color: var(--complementary-lighter);
+}
+
+.round-lost {
+    background-color: #ff9999;
+}
+
+.round-draw {
+    background-color: gainsboro;
+}
+
+.scores-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: #fae8d1;
+    display: none; /* Change here later */
+    animation: show 1s ease;
+    width: 100vw;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%
+    }
+}
+
+
+
+.score {
+    padding: 2em;
+    background: #fefaf5;
+    margin: 1em;
+    border-radius: 999px;
+}

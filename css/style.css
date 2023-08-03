@@ -1,0 +1,128 @@
+
+
+:root {
+    --main: #f7dcb9;
+    --main-lighter: #fcf3e7;
+    --secondary-one: #bdb9f7;
+    --secondary-two: #b9f3f7;
+    --complementary: #b9d4f7;
+    --complementary-darker: #8bb8f2;
+    --complementary-lighter: #d0e2fa;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--main-lighter);
+    font-size: 16px;
+    color: #3a3f4e;
+}
+
+img {
+    background-color: #fffcfc;
+    border-radius: 99999px;
+    max-width: 13em;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: rotate(15deg);
+    cursor: pointer;
+}
+
+
+
+h1 {
+    font-size: 4em;
+    color: var(--complementary-darker);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: .9em;
+    font-weight: 700;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+h3 {
+    padding-bottom: .75em;
+    font-weight: 500;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    gap: 2em;
+    border: 3px solid ivory;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    /* border: 3px solid indianred; */
+    flex: 1 0 auto;
+}
+
+.choices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    /* border: 3px solid slateblue; */
+}
+
+.isSelected {
+    background-color: var(--complementary-lighter);
+}
+
+.selectedByComputer {
+    background-color: #f4baba;
+}
+
+
+.hasWon {
+    animation: rotate 0.5s ease;
+    animation-iteration-count: 5;
+}
+
+@keyframes rotate {
+    0%, 100% {
+        transform: rotate(0); /* Start and end position (no movement) */
+    }
+    50% {
+        transform: rotate(12deg); /* Jumping up by 10 pixels */
+    }
+}
+
+
+.smaller-title {
+    font-size: 2em;
+}
+
+
+.selection-name {
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    margin-top: .5em;
+    color: #edab5d;
+    display: none;
+}
+
+.sad {
+    transform: rotate(180deg);
+}

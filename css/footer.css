@@ -1,0 +1,11 @@
+footer {
+    border-top: 2px dashed white;
+    padding: 2em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 1em;
+    font-size: .9em;
+}

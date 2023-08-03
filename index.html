@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-</head>
-<body>
-    
-</body>
-<script src="main.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shifumi</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/scores.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!-- Confettis -->
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <main class="main-container">
+                <h1 id="title-1" class="">Shifumi!</h1>
+
+                <!-- Conteneur des scores -->
+                <div class="top-container" id="top-container">
+                    <div class="score-text"><!-- Texte du score  -->
+                        <h2>Best of 5</h2>
+                        <h3 class="round-text" id="round-number"></h3>
+                        <p class="score-desc">Acquire 3 wins to beat the computer.</p>
+                    </div>
+
+                    <!-- Circles generated with JS -->
+                    <div class="rounds" id="rounds">
+                    </div>
+
+                </div>
+
+                <!-- Generate the choices with JS -->
+                <div class="choices"></div> 
+                
+                <button id="start-btn" class="jumpy">Start playing</button>
+                <button id="again-btn" class="jumpy hidden">Play again</button>
+
+            </main>
+
+            <!-- Footer -->
+            <footer>
+                <p>made by Elisa</p>
+            </footer>
+
+        </div><!-- End of .container-->
+
+        <!-- Main.js -->
+        <script defer src="main.js"></script>
+    </body>
 </html>
